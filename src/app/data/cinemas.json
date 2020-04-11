@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "ABC Cinema",
+    "location": "Sydney",
+    "opens": "9am",
+    "closes": "11:30pm"
+  },
+  {
+    "id": 2,
+    "name": "Waves Cinema",
+    "location": "Gold Coast",
+    "opens": "10am",
+    "closes": "11:00pm"
+  },
+  {
+    "id": 3,
+    "name": "XYZ Cinema",
+    "location": "Canberra",
+    "opens": "8am",
+    "closes": "10:30pm"
+  },
+  {
+    "id": 4,
+    "name": "Another Cinema",
+    "location": "Cairns",
+    "opens": "10am",
+    "closes": "10:30pm"
+  },
+  {
+    "id": 5,
+    "name": "Flix Cinema",
+    "location": "Melbourne",
+    "opens": "10am",
+    "closes": "11:30pm"
+  },
+  {
+    "id": 6,
+    "name": "Event Cinema",
+    "location": "Brisbane",
+    "opens": "9am",
+    "closes": "11:55pm"
+  },
+  {
+    "id": 7,
+    "name": "WestSide Cinema",
+    "location": "Perth",
+    "opens": "7am",
+    "closes": "9:30pm"
+  },
+  {
+    "id": 8,
+    "name": "Blue Cinema",
+    "location": "Adelaide",
+    "opens": "9am",
+    "closes": "11:30pm"
+  },
+  {
+    "id": 9,
+    "name": "Cairns Cinema",
+    "location": "Cairns",
+    "opens": "9:30am",
+    "closes": "10:30pm"
+  },
+  {
+    "id": 10,
+    "name": "Taz Cinema",
+    "location": "Hobart",
+    "opens": "9am",
+    "closes": "11:30pm"
+  }
+]

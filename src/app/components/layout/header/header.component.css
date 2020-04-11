@@ -1,0 +1,7 @@
+.nav-link {
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: hsl(171, 100%, 41%) !important;
+}
