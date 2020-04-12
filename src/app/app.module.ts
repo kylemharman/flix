@@ -14,6 +14,7 @@ import { MovieComponent } from './components/movie/movie.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { CinemasComponent } from './pages/cinemas/cinemas.component';
 import { HomeComponent } from './pages/home/home.component';
+import { InputComponent } from './components/forms/input/input.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HomeComponent } from './pages/home/home.component';
     MoviesComponent,
     CinemasComponent,
     HomeComponent,
+    InputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

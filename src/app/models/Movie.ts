@@ -3,7 +3,6 @@ export class Movie {
   name: string;
   description: string;
   director: string;
-  genre: string[];
   year: number;
   age: string;
   length: string;

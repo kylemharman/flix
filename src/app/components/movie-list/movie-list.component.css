@@ -1,0 +1,28 @@
+.movie-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+
+.movie-container:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  width: 100%;
+}
+
+.movie-details {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

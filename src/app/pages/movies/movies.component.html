@@ -2,11 +2,12 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Movies
+        Popular Movies
       </h1>
-      <h2 class="subtitle">
-        Find a movie
-      </h2>
     </div>
   </div>
 </section>
+<div class="container" *ngIf="movies">
+  <app-movie-list [movies]="movies"></app-movie-list>
+  <hr />
+</div>

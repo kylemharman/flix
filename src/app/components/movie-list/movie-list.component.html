@@ -1,1 +1,24 @@
-<p>movie-list works!</p>
+<div class="container">
+  <div class="columns is-multiline is-centered is-1">
+    <div *ngFor="let movie of movies" class="column is-one-fifth">
+      <div class="movie-container">
+        <a routerLink="/movie/{{ movie.id }}">
+          <img
+            [src]="movie.image"
+            [alt]="movie.name"
+            [title]="movie.name"
+            class="movie-image"
+          />
+          <div class="movie-details">
+            <p class="is-size-6 has-text-primary movie-name">
+              {{ movie.name }}
+            </p>
+          </div>
+          <span class="tag is-primary has-text-weight-bold">{{
+            movie.age
+          }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

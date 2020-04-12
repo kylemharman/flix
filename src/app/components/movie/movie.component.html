@@ -1,1 +1,39 @@
-<p>movie works!</p>
+<section *ngIf="movie" class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 movie-information-container">
+        <div class="columns has-background is-multiline">
+          <div class="column is-3 has-background">
+            <img [src]="movie.image" [alt]="movie.name" [title]="movie.name" />
+          </div>
+          <div class="column is-9 has-background">
+            <h1 class="title has-text-primary has-text-weight-bold">
+              {{ movie.name }}
+            </h1>
+            <span class="tag is-dark">Director: {{ movie.director }}</span>
+            <span class="tag is-link">{{ movie.length }}</span>
+            <span class="tag is-primary">{{ movie.age }}</span>
+            <hr />
+            <p>{{ movie.description }}</p>
+          </div>
+          <div class="column has-background">
+            <hr />
+            <h2 class="title">Find Cinema</h2>
+            <p>list of cinemas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-4 has-background-light form-container">
+        <app-input label="Movie Title" [(value)]="movie.name"></app-input>
+        <app-input label="Director" [(value)]="movie.director"></app-input>
+        <app-input label="Length" [(value)]="movie.length"></app-input>
+        <app-input label="Rated" [(value)]="movie.age"></app-input>
+        <app-input
+          label="Description"
+          [(value)]="movie.description"
+        ></app-input>
+      </div>
+    </div>
+  </div>
+</section>
