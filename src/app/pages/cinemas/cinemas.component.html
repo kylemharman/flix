@@ -1,17 +1,11 @@
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Cinemas
-      </h1>
-      <h2 class="subtitle">
-        Find a cinema near you...
-      </h2>
-    </div>
+<div class="section">
+  <div class="container">
+    <h1 class="title">
+      Cinemas
+    </h1>
+    <hr />
   </div>
-</section>
-
-<div *ngFor="let cinema of cinemas">
-  <h1>{{ cinema.name }}</h1>
-  <h3>{{ cinema.location }}</h3>
+  <div *ngIf="cinemas">
+    <app-cinema-list [cinemas]="cinemas"></app-cinema-list>
+  </div>
 </div>

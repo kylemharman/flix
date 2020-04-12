@@ -1,1 +1,26 @@
-<p>cinema works!</p>
+<section *ngIf="cinema" class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h1 class="title has-text-primary has-text-weight-bold">
+          {{ cinema.name }}
+        </h1>
+        <hr />
+        <p class="has-text-weight-bold">{{ cinema.location }}</p>
+        <p>Hours: {{ cinema.opens }} - {{ cinema.closes }}</p>
+        <hr />
+        <div class="has-background-light form-container">
+          <h4 class="title">Edit Cinema</h4>
+          <app-input label="Cinema Name" [(value)]="cinema.name"></app-input>
+          <app-input label="Location" [(value)]="cinema.location"></app-input>
+          <app-input label="Opening Time" [(value)]="cinema.opens"></app-input>
+          <app-input label="Closing Time" [(value)]="cinema.closes"></app-input>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title">Showing Now</h2>
+        <hr />
+      </div>
+    </div>
+  </div>
+</section>

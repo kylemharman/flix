@@ -1,13 +1,11 @@
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Popular Movies
-      </h1>
-    </div>
+<div class="section">
+  <div class="container">
+    <h1 class="title">
+      Popular Movies
+    </h1>
+    <hr />
   </div>
-</section>
-<div class="container" *ngIf="movies">
-  <app-movie-list [movies]="movies"></app-movie-list>
-  <hr />
+  <div *ngIf="movies">
+    <app-movie-list [movies]="movies"></app-movie-list>
+  </div>
 </div>

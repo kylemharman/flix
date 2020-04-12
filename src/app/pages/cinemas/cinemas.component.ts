@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CinemaService } from '../../services/cinema.service';
+import { Cinema } from '../../models/Cinema';
 
 @Component({
   selector: 'app-cinemas',
@@ -6,28 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cinemas.component.css'],
 })
 export class CinemasComponent implements OnInit {
-  cinemas = [
-    {
-      id: 1,
-      name: 'ABC Cinema',
-      location: 'Brisbane',
-      hours: { open: '9am', closes: '11pm' },
-    },
-    {
-      id: 2,
-      name: '123 Cinema',
-      location: 'Sydney',
-      hours: { open: '9am', closes: '11pm' },
-    },
-    {
-      id: 3,
-      name: 'XYZ Cinema',
-      location: 'Melbourne',
-      hours: { open: '9am', closes: '11pm' },
-    },
-  ];
+  cinemas: Cinema[];
 
-  constructor() {}
+  constructor(private cinemaService: CinemaService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cinemaService.getCinemas().subscribe((cinemas) => {
+      this.cinemas = cinemas;
+    });
+  }
 }

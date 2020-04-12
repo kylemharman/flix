@@ -12,6 +12,7 @@
             </h1>
             <span class="tag is-dark">Director: {{ movie.director }}</span>
             <span class="tag is-link">{{ movie.length }}</span>
+            <span class="tag is-info">{{ movie.year }}</span>
             <span class="tag is-primary">{{ movie.age }}</span>
             <hr />
             <p>{{ movie.description }}</p>
@@ -25,9 +26,11 @@
       </div>
 
       <div class="column is-4 has-background-light form-container">
+        <h4 class="title">Edit Movie</h4>
         <app-input label="Movie Title" [(value)]="movie.name"></app-input>
         <app-input label="Director" [(value)]="movie.director"></app-input>
         <app-input label="Length" [(value)]="movie.length"></app-input>
+        <app-input label="Year" [(value)]="movie.year"></app-input>
         <app-input label="Rated" [(value)]="movie.age"></app-input>
         <app-input
           label="Description"

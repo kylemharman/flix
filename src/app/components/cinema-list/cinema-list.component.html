@@ -1,1 +1,25 @@
-<p>cinema-list works!</p>
+<div class="container">
+  <div class="columns is-multiline">
+    <div
+      class="column is-6-tablet is-4-desktop cinema-container"
+      *ngFor="let cinema of cinemas"
+    >
+      <a
+        routerLink="/cinema/{{ cinema.id }}"
+        alt="cinema.name"
+        title="cinema.name"
+      >
+        <div class="box has-background-primary">
+          <h4
+            class="is-size-4 has-text-weight-bold has-text-primary has-text-white-bis"
+          >
+            {{ cinema.name }}
+          </h4>
+          <p>
+            {{ cinema.location }}
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

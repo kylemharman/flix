@@ -20,7 +20,7 @@ export class MovieComponent implements OnInit {
     this.getMovie();
   }
 
-  // Normally this would be a seperate get request to fetch a single movie from the database. This would be provided from the movie.service
+  // Normally this would be a seperate get request to fetch a single movie from the database by ID. This would be provided from the movie.service, However as i'm fetching data from a local JSON file this is not possible.
   getMovie() {
     const id = +this.route.snapshot.paramMap.get('id');
 
