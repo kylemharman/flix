@@ -1,0 +1,26 @@
+<div class="field">
+  <label class="label has-text-primary">{{ label }}</label>
+  <div class="control">
+    <div *ngIf="type; else elseBlock">
+      <textarea
+        class="textarea is-primary"
+        placeholder="Primary textarea"
+        [placeholder]="label"
+        [value]="value"
+        [ngModel]="value"
+        (ngModelChange)="changeValue($event)"
+      ></textarea>
+    </div>
+
+    <ng-template #elseBlock>
+      <input
+        class="input is-primary"
+        type="text"
+        [placeholder]="label"
+        [value]="value"
+        [ngModel]="value"
+        (ngModelChange)="changeValue($event)"
+      />
+    </ng-template>
+  </div>
+</div>

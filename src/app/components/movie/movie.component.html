@@ -49,17 +49,20 @@
           </div>
         </div>
       </div>
-      <div class="column is-4 has-background-light form-container">
-        <h4 class="title">Edit Movie</h4>
-        <app-input label="Movie Title" [(value)]="movie.name"></app-input>
-        <app-input label="Director" [(value)]="movie.director"></app-input>
-        <app-input label="Length" [(value)]="movie.length"></app-input>
-        <app-input label="Year" [(value)]="movie.year"></app-input>
-        <app-input label="Rated" [(value)]="movie.age"></app-input>
-        <app-input
-          label="Description"
-          [(value)]="movie.description"
-        ></app-input>
+      <div class="column is-4">
+        <div class="form-container has-background-light">
+          <h4 class="title">Edit Movie</h4>
+          <app-input label="Movie Title" [(value)]="movie.name"></app-input>
+          <app-input label="Director" [(value)]="movie.director"></app-input>
+          <app-input label="Length" [(value)]="movie.length"></app-input>
+          <app-input label="Year" [(value)]="movie.year"></app-input>
+          <app-input label="Rated" [(value)]="movie.age"></app-input>
+          <app-input
+            type="textarea"
+            label="Description"
+            [(value)]="movie.description"
+          ></app-input>
+        </div>
       </div>
     </div>
   </div>

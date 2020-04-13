@@ -6,6 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./input.component.css'],
 })
 export class InputComponent implements OnInit {
+  @Input() type: string;
   @Input() label: string;
   @Input() value: string;
   @Output() valueChange = new EventEmitter();

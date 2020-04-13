@@ -15,4 +15,6 @@ export class CinemaService {
   getCinemas(): Observable<Cinema[]> {
     return this.http.get<Cinema[]>(this.cinemaUrl);
   }
+  // Should be a getCinema() method here. But this is not possible as the data is coming from a JSON file locally.
+  // Alternatively I'm using the getCinemas() method and filtering by matching the id to the route id.
 }
