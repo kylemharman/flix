@@ -33,15 +33,12 @@
 
                   <p>{{ cinema.location }}</p>
                 </div>
+
                 <div
+                  class="column is-2"
                   *ngFor="let time of cinema.showTimes.showTimes"
-                  class="column is-2 movie-time has-background-primary"
                 >
-                  <p
-                    class="is-centered has-text-white has-text-centered has-text-weight-bold"
-                  >
-                    {{ time }}
-                  </p>
+                  <app-time-display [time]="time"></app-time-display>
                 </div>
               </div>
               <hr />

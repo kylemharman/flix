@@ -15,6 +15,7 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { CinemasComponent } from './pages/cinemas/cinemas.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InputComponent } from './components/form-helpers/input/input.component';
+import { TimeDisplayComponent } from './components/time-display/time-display.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InputComponent } from './components/form-helpers/input/input.component'
     CinemasComponent,
     HomeComponent,
     InputComponent,
+    TimeDisplayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
