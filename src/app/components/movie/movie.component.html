@@ -21,7 +21,7 @@
             <hr />
             <h2 class="title">Find Cinema</h2>
             <div class="column is-12" *ngFor="let cinema of cinemaHasMovie">
-              <div class="columns">
+              <div class="columns is-multiline">
                 <div class="column is-3">
                   <a
                     class="heading has-text-primary is-size-6 has-text-weight-bold"
@@ -35,7 +35,7 @@
                 </div>
 
                 <div
-                  class="column is-2"
+                  class="column is-3"
                   *ngFor="let time of cinema.showTimes.showTimes"
                 >
                   <app-time-display [time]="time"></app-time-display>
