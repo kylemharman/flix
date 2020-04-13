@@ -2,6 +2,10 @@
   margin-right: 5px;
 }
 
+.cinema-info-container {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .movie-information-container {
     padding-right: 50px;

@@ -4,4 +4,6 @@ export class Cinema {
   location: string;
   opens: string;
   closes: string;
+  hours: string[];
+  hasMovies: [{ id: number; showTimes: string[] }];
 }

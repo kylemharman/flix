@@ -5,13 +5,8 @@
       class="column is-half-mobile is-one-third-tablet is-one-fifth-desktop"
     >
       <div class="movie-container">
-        <a routerLink="/movie/{{ movie.id }}">
-          <img
-            [src]="movie.image"
-            [alt]="movie.name"
-            [title]="movie.name"
-            class="movie-image"
-          />
+        <a routerLink="/movie/{{ movie.id }}" [title]="movie.name">
+          <img [src]="movie.image" [alt]="movie.name" class="movie-image" />
           <div class="movie-details">
             <p class="is-size-6 has-text-primary movie-name">
               {{ movie.name }}

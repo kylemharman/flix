@@ -18,8 +18,48 @@
         </div>
       </div>
       <div class="column">
-        <h2 class="title">Showing Now</h2>
+        <h2 class="title">Showing Today</h2>
         <hr />
+        <div class="columns is-multiline" *ngIf="moviesAtCinema">
+          <div class="column is-12" *ngFor="let movie of moviesAtCinema">
+            <div class="columns">
+              <div class="column is-2">
+                <img
+                  [src]="movie.image"
+                  [alt]="movie.name"
+                  [title]="movie.name"
+                />
+              </div>
+              <div class="column is-10 movie-info-container">
+                <a
+                  class="heading has-text-primary is-size-6 has-text-weight-bold"
+                  routerLink="/movie/{{ movie.id }}"
+                  [title]="movie.name"
+                >
+                  {{ movie.name }}
+                </a>
+                <span class="tag is-primary has-text-weight-bold">{{
+                  movie.age
+                }}</span>
+                <p class="is-inline-block movie-length">{{ movie.length }}</p>
+
+                <div class="columns is-mobile">
+                  <div
+                    class="column is-2 movie-time has-background-primary"
+                    *ngFor="let time of movie.showTimes"
+                  >
+                    <p
+                      class="is-centered has-text-white has-text-centered has-text-weight-bold"
+                    >
+                      {{ time }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -4,69 +4,283 @@
     "name": "ABC Cinema",
     "location": "Sydney",
     "opens": "9am",
-    "closes": "11:30pm"
+    "closes": "11:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 4,
+        "showTimes": ["11am", "3pm", "9pm"]
+      },
+      {
+        "id": 9,
+        "showTimes": ["1:15pm", "7:30pm"]
+      },
+      {
+        "id": 2,
+        "showTimes": ["11:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Waves Cinema",
     "location": "Gold Coast",
     "opens": "10am",
-    "closes": "11:00pm"
+    "closes": "11:00pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 2,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 5,
+        "showTimes": ["9:00am", "7:45pm"]
+      },
+      {
+        "id": 3,
+        "showTimes": ["9:00am", "7:30pm", "7:45pm"]
+      },
+      {
+        "id": 1,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      },
+      {
+        "id": 7,
+        "showTimes": ["9:00am", "7:30pm", "7:45pm"]
+      },
+      {
+        "id": 9,
+        "showTimes": ["11am", "3pm", "9pm"]
+      }
+    ]
   },
   {
     "id": 3,
     "name": "XYZ Cinema",
     "location": "Canberra",
     "opens": "8am",
-    "closes": "10:30pm"
+    "closes": "10:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 2,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 5,
+        "showTimes": ["7:30pm", "7:45pm"]
+      },
+      {
+        "id": 8,
+        "showTimes": ["1:25pm", "3pm"]
+      },
+      {
+        "id": 6,
+        "showTimes": ["11am", "3pm", "9pm"]
+      },
+      {
+        "id": 10,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Another Cinema",
     "location": "Cairns",
     "opens": "10am",
-    "closes": "10:30pm"
+    "closes": "10:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 4,
+        "showTimes": ["11am", "3pm", "9pm"]
+      },
+      {
+        "id": 9,
+        "showTimes": ["11am", "3pm", "9pm"]
+      },
+      {
+        "id": 2,
+        "showTimes": ["11:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 5,
     "name": "Flix Cinema",
     "location": "Melbourne",
     "opens": "10am",
-    "closes": "11:30pm"
+    "closes": "11:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 2,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 5,
+        "showTimes": ["9:00am", "7:30pm", "7:45pm"]
+      },
+      {
+        "id": 8,
+        "showTimes": ["9:00am", "7:30pm", "7:45pm"]
+      },
+      {
+        "id": 6,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 6,
     "name": "Event Cinema",
     "location": "Brisbane",
     "opens": "9am",
-    "closes": "11:55pm"
+    "closes": "11:55pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 1,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 4,
+        "showTimes": ["9:00am", "7:30pm", "7:45pm"]
+      },
+      {
+        "id": 9,
+        "showTimes": ["1:25pm", "10:30pm"]
+      },
+      {
+        "id": 7,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 7,
     "name": "WestSide Cinema",
     "location": "Perth",
     "opens": "7am",
-    "closes": "9:30pm"
+    "closes": "9:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 1,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 5,
+        "showTimes": ["1:25pm", "10:30pm"]
+      },
+      {
+        "id": 4,
+        "showTimes": ["1:25pm", "10:30pm"]
+      },
+      {
+        "id": 6,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      },
+      {
+        "id": 9,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 8,
     "name": "Blue Cinema",
     "location": "Adelaide",
     "opens": "9am",
-    "closes": "11:30pm"
+    "closes": "11:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 2,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 9,
+        "showTimes": ["9:00am", "7:30pm", "7:45pm"]
+      },
+      {
+        "id": 8,
+        "showTimes": ["10:15am", "2:30pm", "5pm"]
+      },
+      {
+        "id": 6,
+        "showTimes": ["11am", "3pm", "9pm"]
+      },
+      {
+        "id": 1,
+        "showTimes": ["10:15am", "2:30pm", "5pm"]
+      },
+      {
+        "id": 10,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 9,
     "name": "Cairns Cinema",
     "location": "Cairns",
     "opens": "9:30am",
-    "closes": "10:30pm"
+    "closes": "10:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 2,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 5,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      },
+      {
+        "id": 3,
+        "showTimes": ["1:25pm", "10:30pm"]
+      },
+      {
+        "id": 6,
+        "showTimes": ["10:15am", "2:30pm", "5pm"]
+      },
+      {
+        "id": 10,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   },
   {
     "id": 10,
     "name": "Taz Cinema",
     "location": "Hobart",
     "opens": "9am",
-    "closes": "11:30pm"
+    "closes": "11:30pm",
+    "hours": [],
+    "hasMovies": [
+      {
+        "id": 1,
+        "showTimes": ["11:40am", "2:20pm"]
+      },
+      {
+        "id": 5,
+        "showTimes": ["10:15am", "5pm"]
+      },
+      {
+        "id": 8,
+        "showTimes": ["1:25pm", "10:30pm"]
+      },
+      {
+        "id": 6,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      },
+      {
+        "id": 7,
+        "showTimes": ["10:45am", "1:30pm", "10pm"]
+      }
+    ]
   }
 ]

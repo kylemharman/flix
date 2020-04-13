@@ -3,3 +3,9 @@
   padding: 20px;
   border-radius: 8px;
 }
+.movie-time {
+  margin: 10px;
+  padding: 6px 8px;
+  border-radius: 30px;
+  margin-top: auto;
+}

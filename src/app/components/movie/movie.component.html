@@ -17,14 +17,38 @@
             <hr />
             <p>{{ movie.description }}</p>
           </div>
-          <div class="column has-background">
+          <div class="cinema-info-container" *ngIf="cinemaHasMovie">
             <hr />
             <h2 class="title">Find Cinema</h2>
-            <p>list of cinemas</p>
+            <div class="column is-12" *ngFor="let cinema of cinemaHasMovie">
+              <div class="columns">
+                <div class="column is-3">
+                  <a
+                    class="heading has-text-primary is-size-6 has-text-weight-bold"
+                    routerLink="/cinema/{{ cinema.id }}"
+                    [title]="cinema.name"
+                  >
+                    {{ cinema.name }}
+                  </a>
+
+                  <p>{{ cinema.location }}</p>
+                </div>
+                <div
+                  *ngFor="let time of cinema.showTimes.showTimes"
+                  class="column is-2 movie-time has-background-primary"
+                >
+                  <p
+                    class="is-centered has-text-white has-text-centered has-text-weight-bold"
+                  >
+                    {{ time }}
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
           </div>
         </div>
       </div>
-
       <div class="column is-4 has-background-light form-container">
         <h4 class="title">Edit Movie</h4>
         <app-input label="Movie Title" [(value)]="movie.name"></app-input>
