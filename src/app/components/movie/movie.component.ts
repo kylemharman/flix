@@ -28,25 +28,27 @@ export class MovieComponent implements OnInit {
   getMovie() {
     const id = +this.route.snapshot.paramMap.get('id');
 
-    this.movieService.getMovies().subscribe((movies) => {
-      this.movie = movies.find((movie) => movie.id === id);
-      // console.log(this.movie);
-    });
+    this.movieService.getMovies().subscribe(
+      (movies) => (this.movie = movies.find((movie) => movie.id === id)),
+      (error) => console.log(`error ${error}`)
+    );
   }
 
   getCinemasForMovie() {
     const id = +this.route.snapshot.paramMap.get('id');
 
-    this.cinemaService.getCinemas().subscribe((cinemas) => {
-      this.cinemaHasMovie = cinemas
-        .map((cinema) => ({
-          id: cinema.id,
-          name: cinema.name,
-          location: cinema.location,
-          showTimes: cinema.hasMovies.find((movie) => movie.id === id),
-        }))
-        .filter((movie) => movie.showTimes);
-      // console.log(this.cinemaHasMovie);
-    });
+    this.cinemaService.getCinemas().subscribe(
+      (cinemas) => {
+        this.cinemaHasMovie = cinemas
+          .map((cinema) => ({
+            id: cinema.id,
+            name: cinema.name,
+            location: cinema.location,
+            showTimes: cinema.hasMovies.find((movie) => movie.id === id),
+          }))
+          .filter((movie) => movie.showTimes);
+      },
+      (error) => console.log(`error ${error}`)
+    );
   }
 }

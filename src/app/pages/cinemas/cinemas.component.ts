@@ -13,8 +13,9 @@ export class CinemasComponent implements OnInit {
   constructor(private cinemaService: CinemaService) {}
 
   ngOnInit(): void {
-    this.cinemaService.getCinemas().subscribe((cinemas) => {
-      this.cinemas = cinemas;
-    });
+    this.cinemaService.getCinemas().subscribe(
+      (data: Cinema[]) => (this.cinemas = data),
+      (error) => console.log(`error: ${error}`)
+    );
   }
 }

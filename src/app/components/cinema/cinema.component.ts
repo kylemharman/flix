@@ -28,24 +28,28 @@ export class CinemaComponent implements OnInit {
   getCinema() {
     const id = +this.route.snapshot.paramMap.get('id');
 
-    this.cinemaService.getCinemas().subscribe((cinemas) => {
-      this.cinema = cinemas.find((cinema) => cinema.id === id);
-      // console.log(this.cinema);
-    });
+    this.cinemaService
+      .getCinemas()
+      .subscribe(
+        (cinemas) => (this.cinema = cinemas.find((cinema) => cinema.id === id))
+      ),
+      (error) => console.log(`error ${error}`);
   }
 
   getMoviesForCinema() {
-    this.movieService.getMovies().subscribe((movies) => {
-      this.moviesAtCinema = movies
-        .map((movie) => ({
-          ...this.cinema.hasMovies.find((mov) => mov.id === movie.id),
-          name: movie.name,
-          image: movie.image,
-          length: movie.length,
-          age: movie.age,
-        }))
-        .filter((matchesOnly) => matchesOnly.id);
-      // console.log(this.moviesAtCinema);
-    });
+    this.movieService.getMovies().subscribe(
+      (movies) => {
+        this.moviesAtCinema = movies
+          .map((movie) => ({
+            ...this.cinema.hasMovies.find((mov) => mov.id === movie.id),
+            name: movie.name,
+            image: movie.image,
+            length: movie.length,
+            age: movie.age,
+          }))
+          .filter((matchesOnly) => matchesOnly.id);
+      },
+      (error) => console.log(`error ${error}`)
+    );
   }
 }
